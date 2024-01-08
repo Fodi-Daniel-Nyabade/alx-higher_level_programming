@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
 def print_matrix_integer(matrix=None):
-    if matrix is None:
+    if matrix == None:
         return
-
     for row in matrix:
-        for num in row:
-            print("{:d}".format(num), end=" ")
-        print()
+        for index, num in enumerate(row):
+            if index != len(row) - 1:
+                print("{:d}".format(num), end=" ")
+            else:
+                print("{:d}".format(num))
+    print()
