@@ -1,1 +1,1 @@
-# *** More Python Classes **
+# **More Python Classes**
